@@ -1,11 +1,6 @@
 <head>
   <title>monindels.com</title>
 </head>
-
-<body>
-
-</body>
-
 <template name="main">
     {{> navigation}}
     <div class="container principal">
@@ -14,6 +9,7 @@
     <hr />
     <p>Copyright &copy; Todos, 2014-2015.</p>
 </template>
+
 
 <template name="navigation">
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -35,30 +31,11 @@
           <li><a href="/series">Series</a></li>
           <li><a href="/estadosgenerales">Estados Generales</a></li>
           <li><a href="/contacto">Contacto</a></li>
+          <ul class="nav navbar-nav navbar-right">
+      			{{> loginButtons}} <!-- here -->
+      		</ul>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
-</template>
-
-<template name="home">
-  <h1>Bienvenido</h1>
-</template>
-<template name="info">
-  <h1>Info</h1>
-</template>
-
-<template name="blog">
-  <h1>Blog</h1>
-</template>
-
-<template name="series">
-  <h1>Series</h1>
-</template>
-
-<template name="estadosgenerales">
-  <h1>Estados Generales</h1>
-</template>
-<template name="contacto">
-  <h1>Contacto</h1>
 </template>
